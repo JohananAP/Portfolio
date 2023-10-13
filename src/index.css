@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #9ca3af;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
