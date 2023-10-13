@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { BWLogo } from "../lib/utils";
+import Resume from "../assets/documents/Johanan_Abhishek_Resume_V1.pdf";
 
 const sections = [
   {
@@ -76,9 +77,11 @@ export default function NavBar() {
           </a>
           <div className="mr-4 hidden lg:block">{navList}</div>
           <div className="flex gap-4 items-center">
-            <Button variant="gradient" size="sm" className="lg:inline-block">
-              <span>RESUME</span>
-            </Button>
+            <a href={Resume} target="_blank">
+              <Button variant="gradient" size="sm" className="lg:inline-block">
+                <span>RESUME</span>
+              </Button>
+            </a>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

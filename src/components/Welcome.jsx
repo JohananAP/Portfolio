@@ -1,22 +1,10 @@
 import { Typography } from "@material-tailwind/react";
 import { BiLogoGmail, BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
-import { useEffect, useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { contactLinks } from "../lib/data";
+import PicMe from "../assets/images/picme.png";
 
 export default function Welcome() {
-  const targetRef = (useRef < HTMLDivElement) | (null > null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["end end", "end start"],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
-  const position = useTransform(scrollYProgress, (pos) =>
-    pos >= 1 ? "relative" : "fixed"
-  );
-
   return (
     <section
       id="welcome"
@@ -27,7 +15,7 @@ export default function Welcome() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           className="lg:h-full h-40"
-          src="content\images\PicMe.png"
+          src={PicMe}
           alt="nature image"
         />
         <motion.div

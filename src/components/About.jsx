@@ -11,6 +11,10 @@ import {
 import SectionHeading from "./SectionHeading";
 import { recentTech } from "../lib/data";
 import { Icon } from "../lib/utils";
+import Suit from "../assets/images/suit.jpg";
+import Guitar from "../assets/images/guitar.jpg";
+import Kayak from "../assets/images/kayak.jpg";
+import Grad from "../assets/images/graduation.png";
 
 function AccordionCustomIcon() {
   const [open, setOpen] = React.useState(0);
@@ -29,7 +33,7 @@ function AccordionCustomIcon() {
         <AccordionBody className="flex lg:flex-row lg:gap-10 flex-col gap-4 items-center">
           <img
             className="flex-none rounded-xl lg:h-full lg:w-[25rem] h-64"
-            src="content\images\suit.jpg"
+            src={Suit}
             alt="nature image"
           />
           <div className="flex flex-col">
@@ -70,12 +74,12 @@ function AccordionCustomIcon() {
             className="flex-none rounded-xl lg:h-[35rem] lg:w-[25rem] h-64"
           >
             <img
-              src="content\images\guitar.jpg"
+              src={Guitar}
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <img
-              src="content\images\kayak.jpg"
+              src={Kayak}
               alt="image 2"
               className="h-full w-full object-cover"
             />
@@ -117,7 +121,7 @@ function AccordionCustomIcon() {
         <AccordionBody className="flex lg:flex-row lg:gap-10 flex-col gap-4 items-center">
           <img
             className="flex-none rounded-xl lg:h-72 lg:w-[25rem] h-64"
-            src="content\images\graduation.png"
+            src={Grad}
             alt="nature image"
           />
           <div className="flex flex-col">

@@ -1,3 +1,6 @@
+import DDB from "../assets/documents/DDB.pdf";
+import HF from "../assets/documents/HalifaxFoodie.pdf";
+
 export const contactLinks = {
   email: "apjohanan@gmail.com",
   github: "https://github.com/JohananAP",
@@ -115,7 +118,7 @@ export const projects = [
     type: "academic",
     tech: ["IntelliJ IDEA", "GCP", "JAVA"],
     tryme: "",
-    readmore: "content\\DDB.pdf",
+    readmore: DDB,
   },
   {
     name: "MarkIT",
@@ -135,7 +138,7 @@ export const projects = [
     type: "academic",
     tech: ["AWS", "GCP", "Python", "JAVA", "IntelliJ IDEA"],
     tryme: "",
-    readmore: "content\\HalifaxFoodie.pdf",
+    readmore: HF,
   },
   {
     name: "QuestionMark.com",
