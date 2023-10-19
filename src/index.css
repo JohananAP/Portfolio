@@ -18,11 +18,11 @@ html {
 @keyframes timeline-slide {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(50px);
   }
 
   60% {
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
 
   100% {
