@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
+import ScrollPrompt from "./components/ScrollPrompt";
 
 export default function App() {
   const theme = useTheme();
@@ -13,6 +14,7 @@ export default function App() {
     <section theme={theme} className="flex flex-col justify-center bg-blue-50">
       <NavBar />
       <Welcome />
+      <ScrollPrompt />
       <About />
       <Experince />
       <Projects />

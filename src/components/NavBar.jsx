@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { BWLogo } from "../lib/utils";
 import Resume from "../assets/documents/Johanan_Abhishek_Resume_V1.pdf";
 
@@ -64,11 +64,35 @@ export default function NavBar() {
     );
   }, []);
 
+  const { scrollY } = useScroll();
+  const [initial, setInitial] = React.useState(true);
+  const [hidden, setHidden] = React.useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    setInitial(false);
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
+  const variants = {
+    initial: { y: -100, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 0.35, ease: "easeInOut" },
+    visible: { y: 0 },
+    hide: { y: "-100%" },
+  };
+
   return (
     <motion.div
       className="sticky top-0 z-10"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      variants={variants}
+      initial={initial ? "initial" : null}
+      animate={initial ? "animate" : hidden ? "hide" : "visible"}
+      transition={initial ? null : "transition"}
     >
       <Navbar className="mx-auto max-w-screen-2xl py-2 px-4 lg:px-8 lg:py-4 border-white/10">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">

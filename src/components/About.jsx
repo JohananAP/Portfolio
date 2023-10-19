@@ -38,13 +38,12 @@ function AccordionCustomIcon() {
           />
           <div className="flex flex-col">
             <Typography className="text-black text-xl">
-              A Jack of all trades, master of none!
-              <br />
-              If there's anything that I've learnt from my experience, it is to
-              be more flexible and versatile. In recent years, collaborating
-              with various organizations and tackling diverse projects has
-              constantly pushed me to acquire new skills and technologies and
-              delve into deeper expertise when the situation demands.
+              I embrace a 'Jack of all trades' mindset and thrive on being
+              versatile. Throughout my career, I've continually expanded my
+              skill set to meet the unique demands of different projects and
+              organizations. This adaptability has enabled me to quickly acquire
+              and apply new skills, making me an effective problem solver and a
+              valuable asset in a variety of situations.
               <br />
               <br />
               Technologies I've been recently working with:
