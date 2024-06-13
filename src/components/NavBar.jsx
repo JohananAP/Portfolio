@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { BWLogo } from "../lib/utils";
-import Resume from "../assets/documents/Johanan_Abhishek_Resume_V1.pdf";
+import Resume from "../assets/documents/Johanan_Abhishek_Prabhurai.pdf";
 
 const sections = [
   {

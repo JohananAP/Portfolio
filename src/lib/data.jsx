@@ -46,17 +46,17 @@ export const experiences = [
   },
   {
     company: "Capgemini",
-    role: "Associate Consultant",
+    role: "Data Engineer",
     description:
-      "Contributed to a project focused on migrating data from an outdated environment to a modern one, involving the development of ETL pipelines for improved data processing efficiency and the generation of highly accurate reports.",
+      "Contributed to a project focused on migrating data, involving the development of ETL pipelines for improved data processing efficiency and the generation of highly accurate reports.",
     techstack: ["Python", "Pyspark", "Airflow", "Hadoop", "hdfs", "VS Code"],
     tools: [],
     iconPath: "src\\assets\\CAP2.ico",
-    date: "2020 MAY - 2020 NOV",
+    date: "2019 JULY - 2020 NOV",
   },
   {
     company: "Capgemini",
-    role: "Senior Analyst",
+    role: "Junior Data Engineer",
     description:
       "Built ETL pipelines in a cloud environment for efficiently processing substantial client data, ultimately facilitating the generation of reports.",
     techstack: [
@@ -71,24 +71,7 @@ export const experiences = [
     ],
     tools: [],
     iconPath: "src\\assets\\CAP2.ico",
-    date: "2019 MAY - 2020 APR",
-  },
-  {
-    company: "Capgemini",
-    role: "Junior Analyst",
-    description:
-      "Developed a desktop application that automates testing processes through the integration of testing frameworks and Zephyr (a test management tool). Additionally, designed a Python library to facilitate the handling and utilization of Zephyr APIs.",
-    techstack: [
-      "Python",
-      "Informatica",
-      "Tableau",
-      "Java",
-      "Eclipse",
-      "Zephyr Enterprise",
-    ],
-    tools: [],
-    iconPath: "src\\assets\\CAP2.ico",
-    date: "2018 JUN - 2019 APR",
+    date: "2018 JUNE - 2019 JUNE",
   },
 ];
 
